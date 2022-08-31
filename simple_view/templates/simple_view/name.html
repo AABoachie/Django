@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    This is {{ person.first_name }} {{ person.last_name }}!
+    {% if person.first_name == 'Addae' %}
+        <a href="{% url 'simple_view:crush' %}">Go to Neighbor</a>
+    {% endif %}
+    <br/>
+    <img src="{{ person.pic }}" alt="">
+</body>
+</html>
